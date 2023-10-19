@@ -1,2 +1,2 @@
-# ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain
+# ThemisApp & ThemisChain - Digital Forensics Chain of Custody (CoC) Application (ThemisApp) based on an Ethereum Private Blockchain (ThemisChain)
 Information Security and Digital Forensics (MSc) Final Project
