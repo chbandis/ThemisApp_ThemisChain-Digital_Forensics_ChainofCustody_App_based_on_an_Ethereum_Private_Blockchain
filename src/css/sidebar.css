@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Horizontal scroll bar */
+::-webkit-scrollbar{
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F6F1F1; 
+}
+ 
+::-webkit-scrollbar-thumb:horizontal{
+    background: #146C94;
+    border-radius: 10px;
+}
+
+/* Sidebar */
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80px;
+    background-color: #146C94;
+    padding: .4rem .8rem;
+    transition: all 0,5 ease;
+    transition: width 0.2s;
+    z-index: 1;
+}
+
+.sidebar.active ~ .main-content {
+    left: 290px;
+    width: calc(100% - 290px);
+} 
+
+.sidebar.active {
+    width: 290px;
+}
+
+/* Sidebar expand-collapse button */
+.sidebar #btn {
+    position: absolute;
+    top: 1.3rem;
+    left: 50%;
+    font-size: 1.2rem;
+    line-height: 50px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.sidebar.active #btn {
+    left: 90%;
+}
+
+/* Sidebar logo */
+.sidebar .top .logo {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.sidebar.active .top .logo {
+    margin-top: -10px;
+    opacity: 1;
+}
+
+/* Sidebar items */
+.sidebar ul {
+    margin-top: -25px;
+}
+
+.sidebar.active ul {
+    margin-top: 15px;
+}
+
+.sidebar ul li {
+    position: relative;
+    list-style-type: none;
+    height: 60px;
+    width: 90%;
+    margin: 0.8rem auto;
+    line-height: 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.sidebar ul li a {
+    color: #F6F1F1;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0.8rem;
+}
+
+.sidebar ul li a:hover {
+    background-color: #19A7CE;
+    color: #F6F1F1;
+}
+
+.sidebar.active ul li a:hover {
+    line-height: 50px;
+}
+
+.sidebar ul li a img {
+    width: 40px;
+    height: 40px;
+    margin-left: 4.5px;
+}
+
+.sidebar ul li a span {
+    margin-left: -100px;
+}
+
+.sidebar.active ul li a span {
+    margin-left: 10px;
+}
+
+.sidebar .nav-item {
+    opacity: 0;
+}
+
+.sidebar.active .nav-item{
+    opacity: 1;
+}
+
+/* Styles for specific sidebar items */
+.sidebar #newCaseMenuItem {
+    line-height: 24px;
+}
+
+.sidebar.active #newCaseMenuItem:hover {
+    line-height: 50px;
+}
+
+.sidebar #activeCasesMenuItem:hover {
+    line-height: 48px;
+}
+
+.sidebar.active #activeCasesMenuItem:hover {
+    line-height: 50px;
+}
+
+.sidebar #activeCasesMenuItem:hover .tooltip{
+    margin-top: 15px !important;
+}
+
+/* Item tooltip */
+.sidebar ul li .tooltip {
+    position: absolute;
+    color: #19A7CE;
+    background-color: #F6F1F1;
+    min-width: 130px;
+    left: 150%;
+    top: -23%;
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+    border-radius: .6rem;
+    padding: .4rem 1.2rem;
+    line-height: 1.8rem;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s; 
+    visibility: hidden;
+}
+
+.sidebar ul li:after .tooltip {
+    margin-left: -5px;
+}
+
+.sidebar ul li:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidebar.active ul li .tooltip {
+    display: none;
+}
+
+/* Main page content (applies in all the pages in which the sidebar.html is included) */
+.main-content {
+    position: relative;    
+    min-height: 100vh;
+    top: 0;
+    left: 80px;
+    transition: all 0.2s ease;
+    width: calc(100% - 80px);
+    padding: 1rem;
+}
+
+/* Container (applies in all the pages in which the sidebar.html is included) */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

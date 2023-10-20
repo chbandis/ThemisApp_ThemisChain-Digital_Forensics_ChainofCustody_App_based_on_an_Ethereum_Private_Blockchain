@@ -1,0 +1,47 @@
+body {
+    background-color: #F6F1F1 !important;
+}
+
+/* Container Heading 1 */
+.container h1 {
+    color: #146C94;
+    text-align: center;
+}
+
+/* Active Cases Table */
+.table-responsive {   
+    display: flex;
+    white-space: nowrap;
+}
+
+.table > thead {
+    background-color: #146C94;
+}
+
+.table > thead > tr > th{
+    color: #F6F1F1;
+}
+
+.table > tbody > tr > th, td{
+    color: #19A7CE;
+}
+
+/* Read Description Button */
+#readDescBtn {
+    font-size: 13px;
+    width: 100px;
+    white-space: normal;
+    background-color: #146C94;
+}
+
+/* Case Description Modal */
+.modal-body {
+    overflow-wrap: break-word;
+}
+
+/* Media Queries */
+@media (max-width: 390px) {
+    .sidebar {
+        height: 109vh;
+    }
+}

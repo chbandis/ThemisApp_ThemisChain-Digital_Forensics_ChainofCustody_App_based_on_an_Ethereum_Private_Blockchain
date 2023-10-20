@@ -1,0 +1,44 @@
+body {
+    background-color: #F6F1F1 !important;
+}
+
+/* Container */
+.container {
+    margin-top: -20px;
+}
+
+/* Buttons */
+button {
+    min-width: 95px !important;
+}
+
+#walletAddressTop, #walletAddress {
+    overflow-wrap: break-word !important;
+    width: 100%;
+}
+
+#email-btn {
+    margin-right: 10px;
+}
+
+#call-btn {
+    margin-left: 10px;
+}
+
+/* Profile left box */
+#first-box {
+    min-width: 450px;
+}
+
+/* Media Queries */
+@media (max-width: 510px){
+    #issuedBy, #walletAddressTop, #walletAddress {
+        width: 200px;
+    }
+}
+
+@media (max-width: 412px) {
+    .sidebar {
+        height: 180vh;
+    }
+}

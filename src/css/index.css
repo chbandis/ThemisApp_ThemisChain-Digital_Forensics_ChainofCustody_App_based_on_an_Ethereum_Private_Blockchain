@@ -1,0 +1,117 @@
+@import url('https://db.onlinewebfonts.com/c/68b898f6044bbee439423445076f3168?family=Roxborough+CF+Thin');
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
+body{
+  background-color: #F6F1F1;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Central Image  */
+.image-container img {
+  height: 60vh;
+  width: 100%;
+}
+
+/* Title */
+.title {
+  font-family: 'Roxborough CF Thin'; 
+  font-size: 7vh;
+  font-weight: normal;
+  letter-spacing: 6px; 
+  color: #146C94;
+  margin-top: -5px;
+}
+
+/* Subtitle */
+.subtitle {
+  font-family: 'Tenor Sans'; 
+  font-size: 2vh;
+  font-weight:lighter;
+  letter-spacing: 8px; 
+  color: #19A7CE;
+  margin-top: -5px;
+  text-align: center;
+}
+
+/* Loader animation */
+.loader {
+  opacity: 0;
+  -webkit-animation: fading ease-in 1s;
+  animation: fading ease-in 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+  
+/* Loader image */
+.loader img {
+  height: 8vh;
+  width: 100%;
+}
+
+/* Loader text */
+.loader p {
+  font-family: 'Tenor Sans'; 
+  font-size: 10px;
+  color: #146C94;
+  margin-top: 5px;
+}
+
+/* Animations */
+@-webkit-keyframes fading {
+  from {
+      opacity: 0;
+  }
+  to {
+        opacity: 1;   
+  }
+}
+
+@-moz-keyframes fading {
+  from {
+      opacity: 0;
+  }
+  to {
+        opacity: 1;   
+  }
+}
+
+@keyframes fading {
+  from {
+      opacity: 0;
+  }
+  to {
+        opacity: 1;   
+  }
+}
+
+/* Media Queries */
+@media (max-height:128px){
+  .title {
+    font-size: 40px;
+  } 
+}
+
+@media (min-height:770px){
+  .image-container img {
+    height: 450px;
+  }
+  .loader img {
+    height: 60px;
+  }
+}
+
+@media (max-height:770px){
+  .loader img {
+    height: 60px;
+  }
+}

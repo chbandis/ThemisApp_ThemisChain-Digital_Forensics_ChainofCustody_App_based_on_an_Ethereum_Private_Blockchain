@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+        <link rel="stylesheet" href="./css/sidebar.css">
+        <link rel="stylesheet" href="./css/investigatorPage.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <!-- JQuery function to include sidebar.html file -->
+        <script> $(function(){$("#includeSidebar").load("/includes/sidebar.html");}); </script>
+        <title>Investigator 's Profile | ThemisApp - Forensics Chain of Custody</title>
+    </head>
+    <body>      
+        <!-- Sidebar --> 
+        <div class="sidebar">
+            <div id="includeSidebar"></div>
+        </div>         
+           
+        <section class="main-content">
+            <div class="container py-5">          
+                <div class="row">
+                    <!-- Investigator 's profile left box -->
+                    <div class="col-lg-4" id="first-box">
+                        <div class="card mb-4">
+                            <div class="card-body text-center">
+                                <img src="/img/avatar.png" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
+                                <h5 class="my-3" id="fullNameTop"></h5>
+                                <p class="text-muted mb-1" id="investigatorIdTop">#</p>
+                                <p class="text-muted mb-4" id="walletAddressTop"></p>
+                                <div class="d-flex justify-content-center mb-2">
+                                    <button type="button" class="btn btn-primary" id="email-btn">Email</button>
+                                    <button type="button" class="btn btn-outline-primary ms-1" id="call-btn">Call</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Investigator 's profile right box -->
+                    <div class="col-lg-8">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Full Name</p>
+                                    </div>
+                                    <div class="col-sm-9" >
+                                        <p class="text-muted mb-0" id="fullName"></p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Investigator ID</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <p class="text-muted mb-0" id="investigatorId">#</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Wallet Address</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <p class="text-muted mb-0" id="walletAddress"></p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Email</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <p class="text-muted mb-0" id="email"></p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Mobile</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <p class="text-muted mb-0" id="mobile"></p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Date of Birth</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <p class="text-muted mb-0" id="dob"></p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Active Cases</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <p class="text-muted mb-0" id="activeCases"></p>
+                                    </div>
+                                </div>
+                                <hr id="hrIssuedBy">
+                                <div class="row" id="rowIssuedBy">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Issued By</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <p class="text-muted mb-0" id="issuedBy"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>        
+        </section>        
+
+        <script src="includes/web3.min.js"></script>
+        <script src="vendor/truffle-contract/dist/truffle-contract.js"></script>
+        <script src="js/investigator.js"></script>
+ 
+    </body> 
+</html>

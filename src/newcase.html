@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/openNewCase.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- JQuery function to include sidebar.html file -->
+    <script> $(function(){$("#includeSidebar").load("/includes/sidebar.html");}); </script>
+    <title>Open a new case | ThemisApp - Forensics Chain of Custody</title>
+  </head>
+  <body>        
+    <!-- Sidebar --> 
+    <div class="sidebar">
+      <div id="includeSidebar"></div>
+    </div>     
+
+    <div class="main-content">
+      <div class="container">
+        <h1>Open a new case</h1>
+        <br>
+        <!-- Open New Case Form -->
+        <form onsubmit="App.openCase(); return false;">
+          <div class="form-group row">
+            <label class="col-4 col-form-label" for="caseName">Case Name</label> 
+            <div class="col-8">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fa fa-font"></i>
+                  </div>
+                </div> 
+                <input id="caseName" name="caseName" type="text" class="form-control" required="required">
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="caseDesc" class="col-4 col-form-label">Case Description</label> 
+            <div class="col-8">
+              <textarea id="caseDesc" name="caseDesc" cols="40" rows="5" class="form-control" required="required"></textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="caseInvestigator" class="col-4 col-form-label">Case Investigator</label> 
+            <div class="col-8">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fa fa-user-circle-o"></i>
+                  </div>
+                </div> 
+                <input id="caseInvestigator" name="caseInvestigator" placeholder="Wallet Address" type="text" class="form-control" required="required">
+              </div>
+            </div>
+          </div> 
+          <div class="form-group row">
+            <div class="offset-2 col-8">
+              <button name="submit" type="submit" class="btn btn-primary" id="openCaseBtn">Open Case</button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Add Evidence and Add Investigator button Form -->
+        <form>
+          <div class="form-group row">
+            <div class="col-sm-6">
+              <button name="addEvidenceBtn" type="button" class="btn btn-primary" id="addEvidenceBtn"  data-toggle="modal" data-target="#addEvidenceModal" style="display: none;">Add case evidence</button>
+            </div>
+            <div class="col-sm-6">
+              <button name="addInvestigatorBtn" type="button" class="btn btn-primary" id="addInvestigatorBtn" data-toggle="modal" data-target="#addInvestigatorModal" style="display: none;">Add case investigator</button>
+            </div>
+          </div>
+        </form>           
+      </div>
+    </div>
+
+    <!-- Add Evidence Modal -->
+    <div class="modal fade" id="addEvidenceModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addCaseModalTitle">Add case evidence</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Add Case Evidence Form -->
+            <form>
+              <div class="form-group row">
+                <label for="evidenceHash" class="col-4 col-form-label">Evidence Hash</label> 
+                <div class="col-8">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="fa fa-link"></i>
+                      </div>
+                    </div> 
+                  <input id="evidenceHash" name="evidenceHash" type="text" class="form-control" required="required">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="evidenceName" class="col-4 col-form-label">Evidence Name</label> 
+                <div class="col-8">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="fa fa-chain"></i>
+                      </div>
+                    </div> 
+                  <input id="evidenceName" name="evidenceName" type="text" class="form-control" required="required">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="evidenceDesc" class="col-4 col-form-label">Evidence Description</label> 
+                <div class="col-8">
+                  <textarea id="evidenceDesc" name="evidenceDesc" cols="40" rows="5" class="form-control" required="required"></textarea>
+                </div>
+              </div> 
+              <div class="modal-footer">
+                <div class="col-12" id="addCaseEvidenceBtnContainer"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add Investigator Modal -->
+    <div class="modal fade" id="addInvestigatorModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addInvestigatorModalTitle">Add case investigator</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Add Investigator Form -->
+            <form>
+              <div class="form-group row">
+                <label for="walletaddress" class="col-4 col-form-label">Wallet Address</label> 
+                <div class="col-8">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="fa fa-address-card"></i>
+                      </div>
+                    </div> 
+                    <input id="walletaddress" name="walletaddress" type="text" required="required" class="form-control">
+                  </div>
+                </div>
+              </div> 
+              <div class="modal-footer">
+                  <div class="col-12" id="addCaseInvestigatorBtnContainer"></div>
+              </div>
+            </form>
+          </div>
+        </div>å
+      </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="includes/web3.min.js"></script>
+    <script src="vendor/truffle-contract/dist/truffle-contract.js"></script>
+    <script src="js/newCase.js"></script> 
+
+  </body>
+</html>     

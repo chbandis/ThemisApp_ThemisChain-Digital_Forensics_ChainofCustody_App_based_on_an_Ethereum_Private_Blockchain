@@ -1,0 +1,100 @@
+body {
+    background-color: #F6F1F1 !important;
+}
+
+/* Container Heading 1 */
+.container h1 {
+   color: #146C94;
+   text-align: center;
+}
+
+/* Cases & Investigators Tables */
+.table-responsive {   
+    display: flex;
+    white-space: nowrap;
+}
+
+.table > thead {
+    background-color: #146C94;
+}
+
+.table > thead > tr > th{
+    color: #F6F1F1;
+}
+
+.table > tbody > tr > th, td{
+    color: #19A7CE;
+}
+
+/* Read Description Button */
+#readDescBtn {
+    font-size: 13px;
+    width: 100px;
+    white-space: normal;
+    background-color: #146C94;
+}
+
+/* Modals */
+.modal-body {
+    overflow-wrap: break-word;
+}
+
+/* Button Font Awesome icon */
+.btn i {
+    font-size: 20px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Buttons */
+.btnStyle {
+    background-color: #146C94 !important;
+    border: 0px !important;
+    margin-top: 15px !important;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: normal;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+} 
+  
+.btnStyle:hover {
+    color: #fff;
+    background-color: #19A7CE !important;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+  
+.btnStyle:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+#removeInvBtn {
+    background-color: #950f0f !important;
+}   
+
+#removeInvBtn:hover {
+    background-color: #ce1414 !important;
+}
+
+/* Media Queries */
+@media (max-width: 390px) {
+    .sidebar {
+        height: 109vh;
+    }
+}
