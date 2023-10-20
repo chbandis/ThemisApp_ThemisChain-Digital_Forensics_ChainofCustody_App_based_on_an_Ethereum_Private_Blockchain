@@ -7,4 +7,33 @@ The process of creating and then managing the chain of custody begins with the a
 
 Below are some screenshots of the application's user interface:
 
-![ThemisAppHomepage](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/ee09bb50-573b-41b9-918e-451af4aadcc6)
+![ThemisAppHomepage](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/05188df5-6db5-40c9-90dd-cf2e7a4447fb)
+
+![InvestigatorProfile](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/ce40ecb5-8896-4e38-8c00-a87c3846e07c)
+
+![AddNewInvestigator](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/d72f0ea8-b1d7-41b5-a2f3-317d0a005425)
+
+![OpenNewCase](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/074529a2-7a9f-4f3e-9663-d5a5f6233f91)
+
+![ActiveCases](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/f3f4da46-aaa7-4a67-9b4d-0a221b7e5f95)
+
+![ManageCases](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/b7bf8b07-c661-43d1-9272-f7a9db4b6906)
+
+![AddCaseEvidence](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/11be29fb-191f-45b5-9b53-8cddf39c12ef)
+
+![TrackEvidence](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/d8ef309f-7b0c-444b-a67b-7b8546a1f698)
+
+![EvidenceChainOfCustody](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/d9d8454b-0015-4ee3-ad54-ff12bd6792d4)
+
+**Running the Application**
+- [Node.js](https://nodejs.org/en/) should be installed (Python and Visual Studio Build Tools are required).
+- [Metamask](https://metamask.io/download/) should be installed.
+- The npm install command must be executed to install the necessary modules (Duration 2-5 minutes @ ~30Mbps).
+- The RPC URL of ThemisChain is 18.232.0.78:8545 and the Chain ID is 1997 [Network is not running anymore due to maintenance costs].
+- Application url (after running the local server) is http://localhost:3000.
+
+To run the app simply execute the `npm run dev` command inside the application folder to run the **local server** ([lite-server](https://github.com/johnpapa/lite-server)). The result should look like this:
+
+![Lite-serverCommand](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/e9110781-b1b9-4490-a52f-fec1306ab888)
+
+*The versions of the tools used are: Node.js v18.16.1 - npm v9.7.2*
