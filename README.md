@@ -29,7 +29,7 @@ Below are some screenshots of the application's user interface:
 - [Node.js](https://nodejs.org/en/) should be installed (Python and Visual Studio Build Tools are required).
 - [Metamask](https://metamask.io/download/) should be installed.
 - The npm install command must be executed to install the necessary modules (Duration 2-5 minutes @ ~30Mbps).
-- The RPC URL of ThemisChain is 18.232.0.78:8545 and the Chain ID is 1997 [Network is not running anymore due to maintenance costs].
+- The RPC URL of ThemisChain is http://18.232.0.78:8545 and the Chain ID is 1997 [The network is not up anymore due to maintenance costs].
 - Application url (after running the local server) is http://localhost:3000.
 
 To run the app simply execute the `npm run dev` command inside the application folder to run the **local server** ([lite-server](https://github.com/johnpapa/lite-server)). The result should look like this:
