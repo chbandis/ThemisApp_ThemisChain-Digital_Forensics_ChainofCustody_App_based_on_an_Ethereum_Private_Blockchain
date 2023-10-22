@@ -6,8 +6,7 @@ The model of this project (ThemisApp & ThemisChain) includes two roles: investig
 The process of creating and then managing the chain of custody begins with the addition of the evidence to the blockchain by the admin. The uniqueness of the evidence remains intact, as it is maintained among all participants in the network. Given the possible inclusion of sensitive data in the evidence, the actual evidence is protected from exposure to the application and thus to the blockchain, therefore only its hash values are stored. Each administrator is able to check the data on the blockchain by calculating a hash value of each piece of evidence and comparing it to the corresponding value stored on the blockchain. 
 
 Below are some screenshots of the application's user interface:
-
-![ThemisAppHomepage](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/05188df5-6db5-40c9-90dd-cf2e7a4447fb)
+![ThemisAppHomepage](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/977ad025-f590-41cc-95e9-c1b53602a4ab)
 
 ![InvestigatorProfile](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/ce40ecb5-8896-4e38-8c00-a87c3846e07c)
 
