@@ -6,25 +6,26 @@ The model of this project (ThemisApp & ThemisChain) includes two roles: investig
 The process of creating and then managing the chain of custody begins with the addition of the evidence to the blockchain by the admin. The uniqueness of the evidence remains intact, as it is maintained among all participants in the network. Given the possible inclusion of sensitive data in the evidence, the actual evidence is protected from exposure to the application and thus to the blockchain, therefore only its hash values are stored. Each administrator is able to check the data on the blockchain by calculating a hash value of each piece of evidence and comparing it to the corresponding value stored on the blockchain. 
 
 Below are some screenshots of the application's user interface:
+
 ![ThemisAppHomepage](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/977ad025-f590-41cc-95e9-c1b53602a4ab)
 
-![InvestigatorProfile](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/ce40ecb5-8896-4e38-8c00-a87c3846e07c)
+![InvestigatorProfile](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/d089ae21-1ac1-4aae-94f0-58699a114173)
 
-![AddNewInvestigator](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/d72f0ea8-b1d7-41b5-a2f3-317d0a005425)
+![addNewInvestigator](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/f047b725-9f6c-432f-96ee-bbb7dacccdb6)
 
-![OpenNewCase](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/074529a2-7a9f-4f3e-9663-d5a5f6233f91)
+![OpenNewCase](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/8980197c-400c-43ca-909a-17c768e61de1)
 
-![ActiveCases](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/f3f4da46-aaa7-4a67-9b4d-0a221b7e5f95)
+![ActiveCases](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/b98f8ea3-b7c2-408e-9302-1edf3d72696a)
 
-![ManageCases](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/b7bf8b07-c661-43d1-9272-f7a9db4b6906)
+![ManageCases](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/f3b0285c-09f1-468f-aed2-a1794d6496de)
 
-![AddCaseEvidence](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/11be29fb-191f-45b5-9b53-8cddf39c12ef)
+![AddCaseEvidence](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/f55bd8e7-221f-4eec-9db7-193eaba08a5b)
 
-![TrackEvidence](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/d8ef309f-7b0c-444b-a67b-7b8546a1f698)
+![TrackEvidence](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/4f1008d0-9113-4b88-b014-722254b7b59b)
 
-![EvidenceChainOfCustody](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/d9d8454b-0015-4ee3-ad54-ff12bd6792d4)
+![EvidenceChainOfCustody](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/54c4753f-01c8-4113-bea3-5e5cc55dad2b)
 
-![UseCaseStoryboard](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/1d6bc5f1-1f17-42f9-88a6-edf3be1bdc41)
+![UseCaseStoryboard](https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain/assets/91207835/b4c374f4-2e1e-48d1-afb6-3b5b297e97ab)
 
 **Running the Application**
 - [Node.js](https://nodejs.org/en/) should be installed (Python and Visual Studio Build Tools are required).
