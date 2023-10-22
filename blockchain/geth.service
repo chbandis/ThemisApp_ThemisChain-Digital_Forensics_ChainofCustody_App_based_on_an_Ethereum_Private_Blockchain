@@ -1,0 +1,38 @@
+//Geth Service Node0
+[Unit]
+Description=Go Ethereum Client
+
+[Service]
+User=root
+Type=simple
+Restart=always
+ExecStart=/usr/local/bin/geth --networkid 1997 --datadir /opt/ThemisChain/node0/data --port 30303 --ipcdisable --syncmode full --rpc --allow-insecure-unlock --rpccorsdomain "*" --rpcport 8545 --rpcaddr "172.31.83.3" --unlock 0xEd2DE21F55Fb1c2Fd8d56f1Cf2A33998030dc9Ac --password /opt/ThemisChain/node0/password.txt --mine --rpcapi personal,admin,db,eth,net,web3,miner,ssh,txpool,debug,clique -ws --wsaddr 172.31.83.3 --wsport 8546 --wsorigins "*" --wsapi personal,admin,db,eth,net,web3,miner,ssh,txpool,debug,clique --maxpeers 25 --etherbase 0 --gasprice 0 --targetgaslimit 99999999
+
+[Install]
+WantedBy=default.target
+
+//Geth Service Node1
+[Unit]
+Description=Go Ethereum Client
+
+[Service]
+User=root
+Type=simple
+Restart=always
+ExecStart=/usr/local/bin/geth --networkid 1997 --datadir /opt/Themischain/node1/data --port 30303 --ipcdisable --syncmode full --rpc --allow-insecure-unlock --rpccorsdomain "*" --rpcport 8545 --rpcaddr "172.31.89.21" --unlock 0x038573b4588805551f475d737Dad9b91b5a17025 --password /opt/Themischain/node1/password.txt --mine --rpcapi personal,admin,db,eth,net,web3,miner,ssh,txpool,debug,clique -ws --wsaddr 172.31.89.21 --wsport 8546 --wsorigins "*" --wsapi personal,admin,db,eth,net,web3,miner,ssh,txpool,debug,clique --maxpeers 25 --etherbase 0 --gasprice 0 --targetgaslimit 99999999
+
+[Install]
+WantedBy=default.target
+
+//Geth Service Node2
+[Unit]
+Description=Go Ethereum Client
+
+[Service]
+User=root
+Type=simple
+Restart=always
+ExecStart=/usr/local/bin/geth --networkid 1997 --datadir /opt/ThemisChain/node2/data --port 30303 --ipcdisable --syncmode full --rpc --allow-insecure-unlock --rpccorsdomain "*" --rpcport 8545 --rpcaddr "172.31.80.130" --unlock 0x86f565572b9331025CC5a0861cd6F4A3d7b134dF --password /opt/ThemisChain/node2/password.txt --mine --rpcapi personal,admin,db,eth,net,web3,miner,ssh,txpool,debug,clique -ws --wsaddr 172.31.80.130 --wsport 8546 --wsorigins "*" --wsapi personal,admin,db,eth,net,web3,miner,ssh,txpool,debug,clique --maxpeers 25 --etherbase 0 --gasprice 0 --targetgaslimit 99999999
+
+[Install]
+WantedBy=default.target
