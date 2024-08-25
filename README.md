@@ -6,8 +6,8 @@ This project, utilizing the robustness of blockchain technology and more specifi
 - [Objectives](#objectives)
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
-- [Running the Application](#running-the-application)
 - [Screenshots](#screenshots)
+- [Running the Application](#running-the-application)
 - [Contact](#contact)
 
 ## Features
